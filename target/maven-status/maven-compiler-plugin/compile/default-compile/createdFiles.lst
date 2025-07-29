@@ -1,9 +1,9 @@
-com/bulletinboard/model/BulletinBoard.class
+com/bulletinboard/controller/BulletinController.class
 com/bulletinboard/converter/StringToLocalDateConverter.class
-com/bulletinboard/controller/BulletinBoardController.class
-com/bulletinboard/service/BulletinBoardService.class
-com/bulletinboard/interceptor/LoggingInterceptor.class
-com/bulletinboard/dao/BulletinBoardDAO.class
+com/bulletinboard/service/BulletinService.class
+com/bulletinboard/dao/impl/BulletinDAOImpl.class
+com/bulletinboard/dao/BulletinDAO.class
+com/bulletinboard/service/impl/BulletinServiceImpl.class
 com/bulletinboard/controller/HomeController.class
-com/bulletinboard/dao/impl/BulletinBoardDAOImpl.class
-com/bulletinboard/service/impl/BulletinBoardServiceImpl.class
+com/bulletinboard/model/Bulletin.class
+com/bulletinboard/dao/impl/SimpleBulletinDAOImpl.class

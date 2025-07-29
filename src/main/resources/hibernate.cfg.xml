@@ -1,38 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE hibernate-configuration PUBLIC
-        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
-        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+    "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
 
 <hibernate-configuration>
     <session-factory>
-        <!-- 資料庫連線設定 -->
+        <!-- Database connection settings - MySQL -->
         <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
         <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/bulletin_board_system?useUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=Asia/Taipei</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password">a87654331</property>
-        
-        <!-- 連線池設定 (C3P0) -->
-        <property name="hibernate.c3p0.min_size">5</property>
-        <property name="hibernate.c3p0.max_size">20</property>
-        <property name="hibernate.c3p0.timeout">300</property>
-        <property name="hibernate.c3p0.max_statements">50</property>
-        <property name="hibernate.c3p0.idle_test_period">3000</property>
-        
-        <!-- Hibernate 方言設定 -->
+
+        <!-- SQL dialect -->
         <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
-        
-        <!-- 顯示 SQL 語句 (開發時使用) -->
+
+        <!-- Echo all executed SQL to stdout -->
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.format_sql">true</property>
-        
-        <!-- 自動建立/更新表格結構 -->
+
+        <!-- Update database schema on startup -->
         <property name="hibernate.hbm2ddl.auto">update</property>
-        
-        <!-- 當前 Session 上下文 -->
+
+        <!-- Specify session context -->
         <property name="hibernate.current_session_context_class">thread</property>
-        
-        <!-- 實體類別映射 -->
-        <mapping class="com.bulletinboard.model.BulletinBoard"/>
-        
+
+        <!-- Mapping files -->
+        <mapping class="com.bulletinboard.model.Bulletin"/>
     </session-factory>
 </hibernate-configuration>
