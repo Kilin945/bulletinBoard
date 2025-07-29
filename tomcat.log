@@ -1,0 +1,251 @@
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::staticFieldBase has been called by com.google.inject.internal.aop.HiddenClassDefiner (file:/opt/homebrew/Cellar/maven/3.9.11/libexec/lib/guice-5.1.0-classes.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.inject.internal.aop.HiddenClassDefiner
+WARNING: sun.misc.Unsafe::staticFieldBase will be removed in a future release
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------< com.bulletinboard:bulletin-board-system >---------------
+[INFO] Building Bulletin Board System 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- cargo:1.10.10:run (default-cli) @ bulletin-board-system ---
+[INFO] [en3.ContainerRunMojo] Resolved container artifact org.codehaus.cargo:cargo-core-container-tomcat:jar:1.10.10 for container tomcat9x
+[INFO] [beddedLocalContainer] Tomcat 9.x Embedded starting...
+7月 29, 2025 3:31:25 上午 org.apache.coyote.AbstractProtocol init
+資訊: Initializing ProtocolHandler ["http-nio-8080"]
+7月 29, 2025 3:31:25 上午 org.apache.catalina.core.StandardService startInternal
+資訊: Starting service [Tomcat]
+7月 29, 2025 3:31:25 上午 org.apache.catalina.core.StandardEngine startInternal
+資訊: Starting Servlet engine: [Apache Tomcat/9.0.80]
+7月 29, 2025 3:31:25 上午 org.apache.coyote.AbstractProtocol start
+資訊: Starting ProtocolHandler ["http-nio-8080"]
+7月 29, 2025 3:31:25 上午 org.apache.catalina.startup.ContextConfig getDefaultWebXmlFragment
+資訊: No global web.xml found
+7月 29, 2025 3:31:26 上午 org.apache.jasper.servlet.TldScanner scanJars
+資訊: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+7月 29, 2025 3:31:26 上午 org.apache.catalina.core.ApplicationContext log
+資訊: No Spring WebApplicationInitializer types detected on classpath
+7月 29, 2025 3:31:26 上午 org.apache.catalina.core.ApplicationContext log
+資訊: Initializing Spring root WebApplicationContext
+7月 29, 2025 3:31:26 上午 org.springframework.web.context.ContextLoader initWebApplicationContext
+資訊: Root WebApplicationContext: initialization started
+7月 29, 2025 3:31:26 上午 com.mchange.v2.log.MLog 
+資訊: MLog clients using java 1.4+ standard logging.
+7月 29, 2025 3:31:26 上午 com.mchange.v2.c3p0.C3P0Registry 
+資訊: Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]
+7月 29, 2025 3:31:26 上午 org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate ORM core version 5.6.9.Final
+7月 29, 2025 3:31:26 上午 org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+7月 29, 2025 3:31:26 上午 com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource 
+資訊: Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> z8kfltbcmw94n1ukj5cb|116e349d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> z8kfltbcmw94n1ukj5cb|116e349d, idleConnectionTestPeriod -> 3000, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://localhost:3306/bulletin_board_system?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Taipei, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 5, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+7月 29, 2025 3:31:26 上午 com.mchange.v2.resourcepool.BasicResourcePool 
+警告: Bad pool size config, start 3 < min 5. Using 5 as start.
+7月 29, 2025 3:31:26 上午 org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+7月 29, 2025 3:31:26 上午 org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator initiateService
+INFO: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+7月 29, 2025 3:31:27 上午 org.springframework.web.context.ContextLoader initWebApplicationContext
+資訊: Root WebApplicationContext initialized in 948 ms
+7月 29, 2025 3:31:27 上午 org.apache.catalina.core.ApplicationContext log
+資訊: Initializing Spring DispatcherServlet 'dispatcher'
+7月 29, 2025 3:31:27 上午 org.springframework.web.servlet.FrameworkServlet initServletBean
+資訊: Initializing Servlet 'dispatcher'
+7月 29, 2025 3:31:27 上午 org.springframework.web.servlet.FrameworkServlet initServletBean
+資訊: Completed initialization in 234 ms
+[INFO] [beddedLocalContainer] Tomcat 9.x Embedded started on port [8080]
+[INFO] Press Ctrl-C to stop the container...
+Request: GET /bulletin-board/bulletins/list
+Hibernate: 
+    select
+        bulletinbo0_.id as id1_0_,
+        bulletinbo0_.attachment_path as attachme2_0_,
+        bulletinbo0_.content as content3_0_,
+        bulletinbo0_.end_date as end_date4_0_,
+        bulletinbo0_.publish_date as publish_5_0_,
+        bulletinbo0_.publisher as publishe6_0_,
+        bulletinbo0_.title as title7_0_ 
+    from
+        bulletin_board bulletinbo0_ 
+    order by
+        bulletinbo0_.publish_date DESC limit ?
+Hibernate: 
+    select
+        count(bulletinbo0_.id) as col_0_0_ 
+    from
+        bulletin_board bulletinbo0_
+Hibernate: 
+    select
+        count(bulletinbo0_.id) as col_0_0_ 
+    from
+        bulletin_board bulletinbo0_
+Request: GET /bulletin-board/bulletins/list
+Hibernate: 
+    select
+        bulletinbo0_.id as id1_0_,
+        bulletinbo0_.attachment_path as attachme2_0_,
+        bulletinbo0_.content as content3_0_,
+        bulletinbo0_.end_date as end_date4_0_,
+        bulletinbo0_.publish_date as publish_5_0_,
+        bulletinbo0_.publisher as publishe6_0_,
+        bulletinbo0_.title as title7_0_ 
+    from
+        bulletin_board bulletinbo0_ 
+    order by
+        bulletinbo0_.publish_date DESC limit ?
+Hibernate: 
+    select
+        count(bulletinbo0_.id) as col_0_0_ 
+    from
+        bulletin_board bulletinbo0_
+Hibernate: 
+    select
+        count(bulletinbo0_.id) as col_0_0_ 
+    from
+        bulletin_board bulletinbo0_
+Request: GET /bulletin-board/bulletins/view/1
+Hibernate: 
+    select
+        bulletinbo0_.id as id1_0_0_,
+        bulletinbo0_.attachment_path as attachme2_0_0_,
+        bulletinbo0_.content as content3_0_0_,
+        bulletinbo0_.end_date as end_date4_0_0_,
+        bulletinbo0_.publish_date as publish_5_0_0_,
+        bulletinbo0_.publisher as publishe6_0_0_,
+        bulletinbo0_.title as title7_0_0_ 
+    from
+        bulletin_board bulletinbo0_ 
+    where
+        bulletinbo0_.id=?
+Request: GET /bulletin-board/bulletins/edit/1
+Hibernate: 
+    select
+        bulletinbo0_.id as id1_0_0_,
+        bulletinbo0_.attachment_path as attachme2_0_0_,
+        bulletinbo0_.content as content3_0_0_,
+        bulletinbo0_.end_date as end_date4_0_0_,
+        bulletinbo0_.publish_date as publish_5_0_0_,
+        bulletinbo0_.publisher as publishe6_0_0_,
+        bulletinbo0_.title as title7_0_0_ 
+    from
+        bulletin_board bulletinbo0_ 
+    where
+        bulletinbo0_.id=?
+Request: GET /bulletin-board/bulletins/list
+Hibernate: 
+    select
+        bulletinbo0_.id as id1_0_,
+        bulletinbo0_.attachment_path as attachme2_0_,
+        bulletinbo0_.content as content3_0_,
+        bulletinbo0_.end_date as end_date4_0_,
+        bulletinbo0_.publish_date as publish_5_0_,
+        bulletinbo0_.publisher as publishe6_0_,
+        bulletinbo0_.title as title7_0_ 
+    from
+        bulletin_board bulletinbo0_ 
+    order by
+        bulletinbo0_.publish_date DESC limit ?
+Hibernate: 
+    select
+        count(bulletinbo0_.id) as col_0_0_ 
+    from
+        bulletin_board bulletinbo0_
+Hibernate: 
+    select
+        count(bulletinbo0_.id) as col_0_0_ 
+    from
+        bulletin_board bulletinbo0_
+Request: GET /bulletin-board/bulletins/view/2
+Hibernate: 
+    select
+        bulletinbo0_.id as id1_0_0_,
+        bulletinbo0_.attachment_path as attachme2_0_0_,
+        bulletinbo0_.content as content3_0_0_,
+        bulletinbo0_.end_date as end_date4_0_0_,
+        bulletinbo0_.publish_date as publish_5_0_0_,
+        bulletinbo0_.publisher as publishe6_0_0_,
+        bulletinbo0_.title as title7_0_0_ 
+    from
+        bulletin_board bulletinbo0_ 
+    where
+        bulletinbo0_.id=?
+Request: GET /bulletin-board/bulletins/new
+Request: GET /bulletin-board/bulletins/edit/2
+Hibernate: 
+    select
+        bulletinbo0_.id as id1_0_0_,
+        bulletinbo0_.attachment_path as attachme2_0_0_,
+        bulletinbo0_.content as content3_0_0_,
+        bulletinbo0_.end_date as end_date4_0_0_,
+        bulletinbo0_.publish_date as publish_5_0_0_,
+        bulletinbo0_.publisher as publishe6_0_0_,
+        bulletinbo0_.title as title7_0_0_ 
+    from
+        bulletin_board bulletinbo0_ 
+    where
+        bulletinbo0_.id=?
+Request: GET /bulletin-board/bulletins/view/1
+Hibernate: 
+    select
+        bulletinbo0_.id as id1_0_0_,
+        bulletinbo0_.attachment_path as attachme2_0_0_,
+        bulletinbo0_.content as content3_0_0_,
+        bulletinbo0_.end_date as end_date4_0_0_,
+        bulletinbo0_.publish_date as publish_5_0_0_,
+        bulletinbo0_.publisher as publishe6_0_0_,
+        bulletinbo0_.title as title7_0_0_ 
+    from
+        bulletin_board bulletinbo0_ 
+    where
+        bulletinbo0_.id=?
+Request: GET /bulletin-board/bulletins/edit/1
+Hibernate: 
+    select
+        bulletinbo0_.id as id1_0_0_,
+        bulletinbo0_.attachment_path as attachme2_0_0_,
+        bulletinbo0_.content as content3_0_0_,
+        bulletinbo0_.end_date as end_date4_0_0_,
+        bulletinbo0_.publish_date as publish_5_0_0_,
+        bulletinbo0_.publisher as publishe6_0_0_,
+        bulletinbo0_.title as title7_0_0_ 
+    from
+        bulletin_board bulletinbo0_ 
+    where
+        bulletinbo0_.id=?
+Request: POST /bulletin-board/bulletins/update/1
+7月 29, 2025 3:34:06 上午 org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver logException
+警告: Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 2 errors<EOL>Field error in object 'bulletinBoard' on field 'endDate': rejected value [2014-04-24]; codes [typeMismatch.bulletinBoard.endDate,typeMismatch.endDate,typeMismatch.java.time.LocalDate,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bulletinBoard.endDate,endDate]; arguments []; default message [endDate]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.time.LocalDate' for property 'endDate'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@javax.persistence.Column java.time.LocalDate] for value '2014-04-24'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [2014-04-24]]<EOL>Field error in object 'bulletinBoard' on field 'publishDate': rejected value [2014-04-01]; codes [typeMismatch.bulletinBoard.publishDate,typeMismatch.publishDate,typeMismatch.java.time.LocalDate,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bulletinBoard.publishDate,publishDate]; arguments []; default message [publishDate]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.time.LocalDate' for property 'publishDate'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@javax.persistence.Column java.time.LocalDate] for value '2014-04-01'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [2014-04-01]]]
+Request: POST /bulletin-board/bulletins/update/1
+7月 29, 2025 3:35:47 上午 org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver logException
+警告: Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 2 errors<EOL>Field error in object 'bulletinBoard' on field 'endDate': rejected value [2014-04-24]; codes [typeMismatch.bulletinBoard.endDate,typeMismatch.endDate,typeMismatch.java.time.LocalDate,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bulletinBoard.endDate,endDate]; arguments []; default message [endDate]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.time.LocalDate' for property 'endDate'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@javax.persistence.Column java.time.LocalDate] for value '2014-04-24'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [2014-04-24]]<EOL>Field error in object 'bulletinBoard' on field 'publishDate': rejected value [2014-04-01]; codes [typeMismatch.bulletinBoard.publishDate,typeMismatch.publishDate,typeMismatch.java.time.LocalDate,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bulletinBoard.publishDate,publishDate]; arguments []; default message [publishDate]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.time.LocalDate' for property 'publishDate'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@javax.persistence.Column java.time.LocalDate] for value '2014-04-01'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [2014-04-01]]]
+Request: GET /bulletin-board/bulletins/list
+Hibernate: 
+    select
+        bulletinbo0_.id as id1_0_,
+        bulletinbo0_.attachment_path as attachme2_0_,
+        bulletinbo0_.content as content3_0_,
+        bulletinbo0_.end_date as end_date4_0_,
+        bulletinbo0_.publish_date as publish_5_0_,
+        bulletinbo0_.publisher as publishe6_0_,
+        bulletinbo0_.title as title7_0_ 
+    from
+        bulletin_board bulletinbo0_ 
+    order by
+        bulletinbo0_.publish_date DESC limit ?
+Hibernate: 
+    select
+        count(bulletinbo0_.id) as col_0_0_ 
+    from
+        bulletin_board bulletinbo0_
+Hibernate: 
+    select
+        count(bulletinbo0_.id) as col_0_0_ 
+    from
+        bulletin_board bulletinbo0_
+Request: POST /bulletin-board/bulletins/create
+7月 29, 2025 3:36:47 上午 org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver logException
+警告: Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 2 errors<EOL>Field error in object 'bulletinBoard' on field 'endDate': rejected value [2025-08-28]; codes [typeMismatch.bulletinBoard.endDate,typeMismatch.endDate,typeMismatch.java.time.LocalDate,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bulletinBoard.endDate,endDate]; arguments []; default message [endDate]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.time.LocalDate' for property 'endDate'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@javax.persistence.Column java.time.LocalDate] for value '2025-08-28'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [2025-08-28]]<EOL>Field error in object 'bulletinBoard' on field 'publishDate': rejected value [2025-07-29]; codes [typeMismatch.bulletinBoard.publishDate,typeMismatch.publishDate,typeMismatch.java.time.LocalDate,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [bulletinBoard.publishDate,publishDate]; arguments []; default message [publishDate]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.time.LocalDate' for property 'publishDate'; nested exception is org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [@javax.persistence.Column java.time.LocalDate] for value '2025-07-29'; nested exception is java.lang.IllegalArgumentException: Parse attempt failed for value [2025-07-29]]]
+Request: GET /bulletin-board/bulletins/new
+Request: GET /bulletin-board/bulletins/new
+[INFO] [beddedLocalContainer] Tomcat 9.x Embedded is stopping...
