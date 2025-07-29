@@ -135,21 +135,23 @@ public class BulletinServiceImpl implements BulletinService {
 
         // 設置附件信息
         bulletin.setAttachmentFilename(originalFilename);
-        bulletin.setAttachmentPath(filePath);
+        bulletin.setAttachmentPath(uniqueFilename);  // 只存儲檔案名，不存儲完整路徑
     }
 
     /**
      * 刪除附件文件
      */
-    private void deleteAttachmentFile(String filePath) {
+    private void deleteAttachmentFile(String filename) {
         try {
-            File file = new File(filePath);
-            if (file.exists()) {
-                file.delete();
+            if (filename != null && !filename.trim().isEmpty()) {
+                File file = new File(UPLOAD_DIR + filename);
+                if (file.exists()) {
+                    file.delete();
+                }
             }
         } catch (Exception e) {
             // 記錄日誌但不拋出異常
-            System.err.println("Failed to delete attachment file: " + filePath + ", error: " + e.getMessage());
+            System.err.println("Failed to delete attachment file: " + filename + ", error: " + e.getMessage());
         }
     }
 }

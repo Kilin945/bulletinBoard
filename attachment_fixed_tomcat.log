@@ -1784,3 +1784,29 @@ Hibernate:
 16:57:54.074 [http-bio-8080-exec-10] DEBUG org.springframework.web.servlet.view.JstlView - View name 'bulletin/list', model {bulletins=[Bulletin{id=6, title='公告6', publisher='Kilin', publishDate=2025-07-29, endDate=2025-07-31}, Bulletin{id=4, title='測試4', publisher='Kilin', publishDate=2025-07-29, endDate=2025-07-29}, Bulletin{id=3, title='AUTO_INCREMENT測試', publisher='Claude', publishDate=2025-07-29, endDate=2025-08-15}, Bulletin{id=2, title='ＯＯＯ', publisher='Administrator', publishDate=2025-07-29, endDate=2025-07-30}, Bulletin{id=1, title='XXX', publisher='Administrator', publishDate=2014-04-01, endDate=2014-04-24}], currentPage=1, totalPages=1, totalCount=5, search=null}
 16:57:54.074 [http-bio-8080-exec-10] DEBUG org.springframework.web.servlet.view.JstlView - Forwarding to [/WEB-INF/views/bulletin/list.jsp]
 16:57:54.077 [http-bio-8080-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+20:13:14.835 [localhost-startStop-2] DEBUG org.springframework.web.context.support.XmlWebApplicationContext - Closing WebApplicationContext for namespace 'dispatcher-servlet', started on Tue Jul 29 16:36:57 CST 2025, parent: Root WebApplicationContext
+ERROR: IllegalAccessException for stop method in class org.apache.tomcat.maven.plugin.tomcat7.run.ExtendedTomcat
+java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:119)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.apache.tomcat.maven.common.run.EmbeddedRegistry.shutdownAll(EmbeddedRegistry.java:110)
+	at org.apache.tomcat.maven.common.run.EmbeddedRegistry$1.run(EmbeddedRegistry.java:69)
+Caused by: org.apache.catalina.LifecycleException: Failed to stop component [StandardServer[-1]]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:236)
+	at org.apache.catalina.startup.Tomcat.stop(Tomcat.java:351)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	... 3 more
+Caused by: org.apache.catalina.LifecycleException: Failed to stop component [StandardService[Tomcat]]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:236)
+	at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:753)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	... 5 more
+Caused by: org.apache.catalina.LifecycleException: Failed to stop component [StandardEngine[Tomcat]]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:236)
+	at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:502)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	... 7 more
+Caused by: org.apache.catalina.LifecycleException: A child container failed during stop
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:1186)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	... 9 more
